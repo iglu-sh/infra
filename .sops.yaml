@@ -1,0 +1,10 @@
+---
+keys:
+  hosts:
+    - &srv-cache age1u02q8328qvyxapplc9tlsv3tu0gxj6krkyfr60nk44udmwyzc50sqrgp5z
+
+creation_rules:
+  - path_regex: secrets/srv-cache.yaml
+    key_groups:
+      - age:
+          - *srv-cache
